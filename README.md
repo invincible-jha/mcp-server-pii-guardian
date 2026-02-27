@@ -1,5 +1,7 @@
 # mcp-server-pii-guardian
 
+[![Governance Score](https://img.shields.io/badge/governance-self--assessed-blue)](https://github.com/aumos-ai/mcp-server-pii-guardian)
+
 PII detection and redaction middleware for MCP servers.
 
 Wraps [Microsoft Presidio](https://microsoft.github.io/presidio/) to give

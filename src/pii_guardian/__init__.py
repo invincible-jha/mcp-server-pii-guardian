@@ -43,9 +43,27 @@ Types
 """
 
 from pii_guardian.audit import PIIAuditLog
+from pii_guardian.canary_integration import (
+    CanaryBreachRecord,
+    CanaryConfig,
+    CanaryPIIIntegration,
+    CanaryPlacement,
+)
 from pii_guardian.config import DEFAULT_ENTITIES, HIGH_RISK_ENTITIES, GuardianConfig
 from pii_guardian.detector import PIIDetector
 from pii_guardian.guardian import PIIBlockedError, PIIGuardian
+from pii_guardian.local_detector import DetectorConfig, LocalPIIDetector, PIIFinding
+from pii_guardian.pii_report import FindingSummary, PIIReport, PIIReportGenerator
+from pii_guardian.profiles import (
+    CCPACategory,
+    CCPAProfile,
+    GDPRDataCategory,
+    GDPRProfile,
+    HIPAAProfile,
+    PCIProfile,
+    PCISensitivityLevel,
+    PHIIdentifier,
+)
 from pii_guardian.redactor import PIIRedactor
 from pii_guardian.types import (
     GuardResult,
@@ -63,6 +81,28 @@ __all__ = [
     "PIIRedactor",
     "PIIAuditLog",
     "GuardianConfig",
+    # Local detector
+    "LocalPIIDetector",
+    "DetectorConfig",
+    "PIIFinding",
+    # Report generator
+    "PIIReportGenerator",
+    "PIIReport",
+    "FindingSummary",
+    # Canary integration
+    "CanaryPIIIntegration",
+    "CanaryConfig",
+    "CanaryPlacement",
+    "CanaryBreachRecord",
+    # Compliance profiles
+    "GDPRProfile",
+    "GDPRDataCategory",
+    "HIPAAProfile",
+    "PHIIdentifier",
+    "PCIProfile",
+    "PCISensitivityLevel",
+    "CCPAProfile",
+    "CCPACategory",
     # Exceptions
     "PIIBlockedError",
     # Enums
