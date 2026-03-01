@@ -43,6 +43,7 @@ Types
 """
 
 from pii_guardian.audit import PIIAuditLog
+from pii_guardian.streaming import StreamingPIIDetector
 from pii_guardian.canary_integration import (
     CanaryBreachRecord,
     CanaryConfig,
@@ -112,6 +113,8 @@ __all__ = [
     "PIIDetection",
     "GuardResult",
     "PIIAuditEntry",
+    # Streaming
+    "StreamingPIIDetector",
     # Constants
     "DEFAULT_ENTITIES",
     "HIGH_RISK_ENTITIES",

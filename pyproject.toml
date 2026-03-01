@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mcp-pii-guardian"
+name = "aumos-pii-guardian"
 version = "0.1.0"
 description = "PII detection and redaction middleware for MCP servers"
 readme = "README.md"
@@ -55,10 +55,10 @@ spacy = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/muveraai/mcp-server-pii-guardian"
-Repository = "https://github.com/muveraai/mcp-server-pii-guardian"
-Issues = "https://github.com/muveraai/mcp-server-pii-guardian/issues"
-Changelog = "https://github.com/muveraai/mcp-server-pii-guardian/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/aumos-ai/mcp-server-pii-guardian"
+Repository = "https://github.com/aumos-ai/mcp-server-pii-guardian"
+Issues = "https://github.com/aumos-ai/mcp-server-pii-guardian/issues"
+Changelog = "https://github.com/aumos-ai/mcp-server-pii-guardian/blob/main/CHANGELOG.md"
 
 # ---------------------------------------------------------------------------
 # Hatch source layout -------------------------------------------------------
